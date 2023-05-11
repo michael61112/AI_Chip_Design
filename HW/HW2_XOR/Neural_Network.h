@@ -13,9 +13,13 @@ SC_MODULE( Neural_Network ) {
 	Neuron *N3;
 	
     SC_CTOR( Neural_Network ) {
-		
+		N1 = new Neuron("N1");
+		N2 = new Neuron("N2");
+		N3 = new Neuron("N3");
 		// vvvvv put your code here vvvvv
-		
+		(*N1)(input1, input2, c1);
+		(*N2)(input1, input2, c2);
+		(*N3)(c1, c2, output);		
 		// ^^^^^ put your code here ^^^^^
 
 		N1->w1 = 10;
@@ -28,5 +32,11 @@ SC_MODULE( Neural_Network ) {
 		N3->w2 = 10;
 		N3->b = -5;
     }
+
+   ~Neural_Network() {
+	delete N1;
+	delete N2;
+	delete N3;
+   }
 };
 

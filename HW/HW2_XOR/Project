@@ -1,0 +1,2627 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pct_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+ <version>3.0</version>
+ <fingerprint>063c6c72d2af477aae27463200fb628f0cf203b8</fingerprint>
+ <project>
+  <system_library>
+   <name>Project</name>
+   <examples/>
+   <protocols/>
+   <blocks>
+    <block>
+     <name>Monitor</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="1">
+       <name>clock</name>
+       <category>CLOCK</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <slave/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>CLOCK</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="2">
+       <name>In1</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="3">
+       <name>In2</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="4">
+       <name>Y</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="5">
+       <class_name>Monitor</class_name>
+       <real_class_name>Monitor</real_class_name>
+       <constructors>
+        <constructor io_id="6"/>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>clock</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>In1</name>
+         <datatype>
+          <value>float</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>In2</name>
+         <datatype>
+          <value>float</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>Y</name>
+         <datatype>
+          <value>float</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>clock</block_port>
+         <block_protocol>CLOCK</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>clock</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>In1</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>In1</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>In2</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>In2</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>Y</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>Y</encap_port>
+        </bca_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>1</io_reference>
+         </port_ref>
+         <protocol>
+          <description>CLOCK</description>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>2</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="float" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>3</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="float" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>4</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="float" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>source_file</name>
+           <setting_value>
+            <value>Monitor.cpp</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>Monitor.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+    <block>
+     <name>Neuron</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="7">
+       <name>input1</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="8">
+       <name>input2</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="9">
+       <name>output</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <out/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="10">
+       <class_name>Neuron</class_name>
+       <real_class_name>Neuron</real_class_name>
+       <constructors>
+        <constructor io_id="11"/>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>input1</name>
+         <datatype>
+          <value>float</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>input2</name>
+         <datatype>
+          <value>float</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>output</name>
+         <datatype>
+          <value>float</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <out/>
+        </bca_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>input1</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>input1</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>input2</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>input2</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>output</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>output</encap_port>
+        </bca_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>7</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="float" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>8</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="float" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>9</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="float" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>source_file</name>
+           <setting_value>
+            <value>Neuron.cpp</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>Neuron.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+    <block>
+     <name>Neural_Network</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="12">
+       <name>input1</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="13">
+       <name>input2</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="14">
+       <name>output</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <out/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="15">
+       <class_name>Neural_Network</class_name>
+       <real_class_name>Neural_Network</real_class_name>
+       <constructors>
+        <constructor io_id="16"/>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>input1</name>
+         <datatype>
+          <value>float</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>input2</name>
+         <datatype>
+          <value>float</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>output</name>
+         <datatype>
+          <value>float</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <out/>
+        </bca_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>input1</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>input1</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>input2</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>input2</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>output</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>output</encap_port>
+        </bca_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>12</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="float" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>13</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="float" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>14</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="float" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>Neural_Network.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+    <block>
+     <name>Pattern</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="17">
+       <name>clock</name>
+       <category>CLOCK</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <slave/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>CLOCK</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="18">
+       <name>reset</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="19">
+       <name>in1</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <out/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="20">
+       <name>in2</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <out/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="21">
+       <class_name>Pattern</class_name>
+       <real_class_name>Pattern</real_class_name>
+       <constructors>
+        <constructor io_id="22"/>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>clock</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>reset</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>in1</name>
+         <datatype>
+          <value>float</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <out/>
+        </bca_port>
+        <bca_port>
+         <name>in2</name>
+         <datatype>
+          <value>float</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <out/>
+        </bca_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>clock</block_port>
+         <block_protocol>CLOCK</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>clock</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>reset</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>reset</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>in1</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>in1</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>in2</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>in2</encap_port>
+        </bca_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>17</io_reference>
+         </port_ref>
+         <protocol>
+          <description>CLOCK</description>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>18</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>19</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="float" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>20</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="float" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>source_file</name>
+           <setting_value>
+            <value>Pattern.cpp</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>Pattern.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+    <block>
+     <name>Clock</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="23">
+       <name>clk</name>
+       <category>CLOCK</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <master/>
+       <out/>
+       <possible_protocols>
+        <protocol>
+         <description>CLOCK</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="24">
+       <class_name>Clock</class_name>
+       <real_class_name>Clock</real_class_name>
+       <constructors>
+        <constructor io_id="25">
+         <parameter>
+          <name>division</name>
+          <value>
+           <type>sfIntegerParameter</type>
+           <default>0</default>
+           <int_restrict>
+            <range_min>-2147483648</range_min>
+            <range_max>2147483647</range_max>
+           </int_restrict>
+          </value>
+         </parameter>
+         <parameter>
+          <name>cycle</name>
+          <value>
+           <type>sfIntegerParameter</type>
+           <default>0</default>
+           <int_restrict>
+            <range_min>-2147483648</range_min>
+            <range_max>2147483647</range_max>
+           </int_restrict>
+          </value>
+         </parameter>
+        </constructor>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>clk</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <out/>
+        </bca_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>clk</block_port>
+         <block_protocol>CLOCK</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>clk</encap_port>
+        </bca_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>23</io_reference>
+         </port_ref>
+         <protocol>
+          <description>CLOCK</description>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>source_file</name>
+           <setting_value>
+            <value>clockreset.cpp</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>clockreset.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+    <block>
+     <name>Reset</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="26">
+       <name>rst</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <out/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="27">
+       <class_name>Reset</class_name>
+       <real_class_name>Reset</real_class_name>
+       <constructors>
+        <constructor io_id="28">
+         <parameter>
+          <name>_ticks</name>
+          <value>
+           <type>sfIntegerParameter</type>
+           <default>0</default>
+           <int_restrict>
+            <range_min>-2147483648</range_min>
+            <range_max>2147483647</range_max>
+           </int_restrict>
+          </value>
+         </parameter>
+        </constructor>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>rst</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <out/>
+        </bca_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>rst</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>rst</encap_port>
+        </bca_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>26</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>source_file</name>
+           <setting_value>
+            <value>clockreset.cpp</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>clockreset.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+   </blocks>
+  </system_library>
+  <all_libraries>
+  </all_libraries>
+  <export_directories>
+   <path>export</path>
+  </export_directories>
+  <system>
+   <hardware_system>
+    <sys_hierarchical_block io_id="29">
+     <sys_page>Default</sys_page>
+     <extra_parameters>
+      <parameter>
+       <name>property_xml_file</name>
+       <value>
+        <type>sfStringParameter</type>
+        <default>Properties.xml</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>system_hierarchy_xml_file</name>
+       <value>
+        <type>sfStringParameter</type>
+        <default>SystemHierarchy.xml</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>/task_modeling/clock_period</name>
+       <value>
+        <type>sfDoubleParameter</type>
+        <default>1</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>/task_modeling/pre_emption</name>
+       <value>
+        <type>sfBooleanParameter</type>
+        <default>false</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>/task_modeling/resources</name>
+       <value>
+        <type>sfIntegerParameter</type>
+        <default>1</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>/task_modeling/scheduler</name>
+       <value>
+        <type>sfStringParameter</type>
+        <default>round_robin</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>/task_modeling/time_slice</name>
+       <value>
+        <type>sfDoubleParameter</type>
+        <default>30</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>/task_modeling/time_slicing</name>
+       <value>
+        <type>sfBooleanParameter</type>
+        <default>false</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+     </extra_parameters>
+     <parameters_set>
+      <parameters_value>
+       <name>Block properties</name>
+       <parameter_list>
+        <parameter_value name="Name" value="HARDWARE"/>
+       </parameter_list>
+      </parameters_value>
+      <parameters_value>
+       <name>Extra properties</name>
+       <parameter_list>
+        <parameter_value name="property_xml_file" value="Properties.xml" runtime="true"/>
+        <parameter_value name="system_hierarchy_xml_file" value="SystemHierarchy.xml" runtime="true"/>
+        <parameter_value name="/task_modeling/clock_period" value="1" runtime="true"/>
+        <parameter_value name="/task_modeling/pre_emption" value="false" runtime="true"/>
+        <parameter_value name="/task_modeling/resources" value="1" runtime="true"/>
+        <parameter_value name="/task_modeling/scheduler" value="round_robin" runtime="true"/>
+        <parameter_value name="/task_modeling/time_slice" value="30" runtime="true"/>
+        <parameter_value name="/task_modeling/time_slicing" value="false" runtime="true"/>
+       </parameter_list>
+      </parameters_value>
+     </parameters_set>
+     <sys_hierarchical_ports/>
+     <sys_pages>
+      <sys_page>Default</sys_page>
+     </sys_pages>
+     <sys_blocks>
+      <sys_block io_id="30">
+       <description>Reset</description>
+       <sys_page>Default</sys_page>
+       <parameters_set>
+        <parameters_value>
+         <name>Block properties</name>
+         <parameter_list>
+          <parameter_value name="Name" value="i_Reset"/>
+         </parameter_list>
+        </parameters_value>
+        <parameters_value>
+         <name>Constructor Arguments</name>
+         <parameter_list>
+          <parameter_value name="_ticks" value="10"/>
+         </parameter_list>
+        </parameters_value>
+       </parameters_set>
+       <sys_ports>
+        <sys_port io_id="31">
+         <description>
+          <io_reference>26</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>45</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-2</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+       </sys_ports>
+       <selected_encap>
+        <io_reference>27</io_reference>
+       </selected_encap>
+       <selected_encap_constructor>
+        <io_reference>28</io_reference>
+       </selected_encap_constructor>
+       <encap_parameters_map>
+        <item>
+         <element>
+          <io_reference>27</io_reference>
+         </element>
+        </item>
+       </encap_parameters_map>
+       <encap_scml_properties_map>
+        <item>
+         <element>
+          <io_reference>27</io_reference>
+         </element>
+        </item>
+       </encap_scml_properties_map>
+       <encap_constructor_parameters_map>
+        <item>
+         <element>
+          <io_reference>28</io_reference>
+         </element>
+         <parameters_value>
+          <name>Constructor Arguments</name>
+          <parameter_list>
+           <parameter_value name="_ticks" value="10"/>
+          </parameter_list>
+         </parameters_value>
+        </item>
+       </encap_constructor_parameters_map>
+       <dictionary/>
+       <gui>
+        <gui_base_block>
+         <orientation>2</orientation>
+         <shape>1</shape>
+         <angle>90</angle>
+         <bounds x="120" y="378" width="100" height="100"/>
+        </gui_base_block>
+       </gui>
+      </sys_block>
+      <sys_block io_id="32">
+       <description>Pattern</description>
+       <sys_page>Default</sys_page>
+       <parameters_set>
+        <parameters_value>
+         <name>Block properties</name>
+         <parameter_list>
+          <parameter_value name="Name" value="i_Pattern"/>
+         </parameter_list>
+        </parameters_value>
+       </parameters_set>
+       <sys_ports>
+        <sys_port io_id="33">
+         <description>
+          <io_reference>17</io_reference>
+         </description>
+         <protocol>
+          <description>CLOCK</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+           <parameters_value>
+            <name>Protocol scml2_clock_if properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>22</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="34">
+         <description>
+          <io_reference>18</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>45</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="35">
+         <description>
+          <io_reference>19</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>21</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="36">
+         <description>
+          <io_reference>20</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>44</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+       </sys_ports>
+       <selected_encap>
+        <io_reference>21</io_reference>
+       </selected_encap>
+       <selected_encap_constructor>
+        <io_reference>22</io_reference>
+       </selected_encap_constructor>
+       <encap_parameters_map>
+        <item>
+         <element>
+          <io_reference>21</io_reference>
+         </element>
+        </item>
+       </encap_parameters_map>
+       <encap_scml_properties_map>
+        <item>
+         <element>
+          <io_reference>21</io_reference>
+         </element>
+        </item>
+       </encap_scml_properties_map>
+       <encap_constructor_parameters_map>
+        <item>
+         <element>
+          <io_reference>22</io_reference>
+         </element>
+        </item>
+       </encap_constructor_parameters_map>
+       <dictionary/>
+       <gui>
+        <gui_base_block>
+         <orientation>2</orientation>
+         <shape>1</shape>
+         <angle>90</angle>
+         <bounds x="190" y="157" width="100" height="100"/>
+        </gui_base_block>
+       </gui>
+      </sys_block>
+      <sys_block io_id="37">
+       <description>Clock</description>
+       <sys_page>Default</sys_page>
+       <parameters_set>
+        <parameters_value>
+         <name>Block properties</name>
+         <parameter_list>
+          <parameter_value name="Name" value="i_Clock"/>
+         </parameter_list>
+        </parameters_value>
+        <parameters_value>
+         <name>Constructor Arguments</name>
+         <parameter_list>
+          <parameter_value name="division" value="5"/>
+          <parameter_value name="cycle" value="40"/>
+         </parameter_list>
+        </parameters_value>
+       </parameters_set>
+       <sys_ports>
+        <sys_port io_id="38">
+         <description>
+          <io_reference>23</io_reference>
+         </description>
+         <protocol>
+          <description>CLOCK</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+           <parameters_value>
+            <name>Protocol scml2_clock_if properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>22</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+       </sys_ports>
+       <selected_encap>
+        <io_reference>24</io_reference>
+       </selected_encap>
+       <selected_encap_constructor>
+        <io_reference>25</io_reference>
+       </selected_encap_constructor>
+       <encap_parameters_map>
+        <item>
+         <element>
+          <io_reference>24</io_reference>
+         </element>
+        </item>
+       </encap_parameters_map>
+       <encap_scml_properties_map>
+        <item>
+         <element>
+          <io_reference>24</io_reference>
+         </element>
+        </item>
+       </encap_scml_properties_map>
+       <encap_constructor_parameters_map>
+        <item>
+         <element>
+          <io_reference>25</io_reference>
+         </element>
+         <parameters_value>
+          <name>Constructor Arguments</name>
+          <parameter_list>
+           <parameter_value name="division" value="5"/>
+           <parameter_value name="cycle" value="40"/>
+          </parameter_list>
+         </parameters_value>
+        </item>
+       </encap_constructor_parameters_map>
+       <dictionary/>
+       <gui>
+        <gui_base_block>
+         <orientation>2</orientation>
+         <shape>1</shape>
+         <angle>90</angle>
+         <bounds x="-10" y="227" width="100" height="100"/>
+        </gui_base_block>
+       </gui>
+      </sys_block>
+      <sys_block io_id="39">
+       <description>Monitor</description>
+       <sys_page>Default</sys_page>
+       <parameters_set>
+        <parameters_value>
+         <name>Block properties</name>
+         <parameter_list>
+          <parameter_value name="Name" value="i_Monitor"/>
+         </parameter_list>
+        </parameters_value>
+       </parameters_set>
+       <sys_ports>
+        <sys_port io_id="40">
+         <description>
+          <io_reference>1</io_reference>
+         </description>
+         <protocol>
+          <description>CLOCK</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+           <parameters_value>
+            <name>Protocol scml2_clock_if properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>22</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="41">
+         <description>
+          <io_reference>2</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>45</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="42">
+         <description>
+          <io_reference>3</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>68</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="43">
+         <description>
+          <io_reference>4</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>91</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+       </sys_ports>
+       <selected_encap>
+        <io_reference>5</io_reference>
+       </selected_encap>
+       <selected_encap_constructor>
+        <io_reference>6</io_reference>
+       </selected_encap_constructor>
+       <encap_parameters_map>
+        <item>
+         <element>
+          <io_reference>5</io_reference>
+         </element>
+        </item>
+       </encap_parameters_map>
+       <encap_scml_properties_map>
+        <item>
+         <element>
+          <io_reference>5</io_reference>
+         </element>
+        </item>
+       </encap_scml_properties_map>
+       <encap_constructor_parameters_map>
+        <item>
+         <element>
+          <io_reference>6</io_reference>
+         </element>
+        </item>
+       </encap_constructor_parameters_map>
+       <dictionary/>
+       <gui>
+        <gui_base_block>
+         <orientation>2</orientation>
+         <shape>1</shape>
+         <angle>90</angle>
+         <bounds x="477" y="305" width="100" height="131"/>
+        </gui_base_block>
+       </gui>
+      </sys_block>
+      <sys_block io_id="44">
+       <description>Neural_Network</description>
+       <sys_page>Default</sys_page>
+       <parameters_set>
+        <parameters_value>
+         <name>Block properties</name>
+         <parameter_list>
+          <parameter_value name="Name" value="i_Neural_Network"/>
+         </parameter_list>
+        </parameters_value>
+       </parameters_set>
+       <sys_ports>
+        <sys_port io_id="45">
+         <description>
+          <io_reference>12</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>22</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="46">
+         <description>
+          <io_reference>13</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>45</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="47">
+         <description>
+          <io_reference>14</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>22</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+       </sys_ports>
+       <selected_encap>
+        <io_reference>15</io_reference>
+       </selected_encap>
+       <selected_encap_constructor>
+        <io_reference>16</io_reference>
+       </selected_encap_constructor>
+       <encap_parameters_map>
+        <item>
+         <element>
+          <io_reference>15</io_reference>
+         </element>
+        </item>
+       </encap_parameters_map>
+       <encap_scml_properties_map>
+        <item>
+         <element>
+          <io_reference>15</io_reference>
+         </element>
+        </item>
+       </encap_scml_properties_map>
+       <encap_constructor_parameters_map>
+        <item>
+         <element>
+          <io_reference>16</io_reference>
+         </element>
+        </item>
+       </encap_constructor_parameters_map>
+       <dictionary/>
+       <gui>
+        <gui_base_block>
+         <orientation>2</orientation>
+         <shape>1</shape>
+         <angle>90</angle>
+         <bounds x="446" y="156" width="100" height="100"/>
+        </gui_base_block>
+       </gui>
+      </sys_block>
+     </sys_blocks>
+     <connections>
+      <connection io_id="48">
+       <name>C</name>
+       <sys_ports>
+        <io_reference>35</io_reference>
+        <io_reference>45</io_reference>
+        <io_reference>41</io_reference>
+       </sys_ports>
+       <gui>
+        <can_be_multipoint>true</can_be_multipoint>
+        <wires>
+         <wire>
+          <first_route>true</first_route>
+          <stroke_width>1</stroke_width>
+          <start_port>
+           <io_reference>35</io_reference>
+          </start_port>
+          <end_port>
+           <io_reference>45</io_reference>
+          </end_port>
+          <segments>
+           <segment x1="25432" y1="25188" x2="25451" y2="25188" orientation="-1"/>
+          </segments>
+         </wire>
+         <wire>
+          <first_route>true</first_route>
+          <stroke_width>1</stroke_width>
+          <start_port>
+           <io_reference>35</io_reference>
+          </start_port>
+          <end_port>
+           <io_reference>41</io_reference>
+          </end_port>
+          <segments>
+           <segment x1="25285" y1="25188" x2="25432" y2="25188" orientation="-1"/>
+           <segment x1="25432" y1="25188" x2="25432" y2="25360" orientation="-2"/>
+           <segment x1="25432" y1="25360" x2="25482" y2="25360" orientation="-1"/>
+          </segments>
+         </wire>
+        </wires>
+       </gui>
+      </connection>
+      <connection io_id="49">
+       <name>C_1</name>
+       <sys_ports>
+        <io_reference>36</io_reference>
+        <io_reference>46</io_reference>
+        <io_reference>42</io_reference>
+       </sys_ports>
+       <gui>
+        <can_be_multipoint>true</can_be_multipoint>
+        <wires>
+         <wire>
+          <first_route>true</first_route>
+          <stroke_width>1</stroke_width>
+          <start_port>
+           <io_reference>36</io_reference>
+          </start_port>
+          <end_port>
+           <io_reference>46</io_reference>
+          </end_port>
+          <segments>
+           <segment x1="25378" y1="25211" x2="25451" y2="25211" orientation="-1"/>
+          </segments>
+         </wire>
+         <wire>
+          <first_route>true</first_route>
+          <stroke_width>1</stroke_width>
+          <start_port>
+           <io_reference>36</io_reference>
+          </start_port>
+          <end_port>
+           <io_reference>42</io_reference>
+          </end_port>
+          <segments>
+           <segment x1="25285" y1="25211" x2="25378" y2="25211" orientation="-1"/>
+           <segment x1="25378" y1="25211" x2="25378" y2="25383" orientation="-2"/>
+           <segment x1="25378" y1="25383" x2="25482" y2="25383" orientation="-1"/>
+          </segments>
+         </wire>
+        </wires>
+       </gui>
+      </connection>
+      <connection io_id="50">
+       <name>C_2</name>
+       <sys_ports>
+        <io_reference>38</io_reference>
+        <io_reference>33</io_reference>
+        <io_reference>40</io_reference>
+       </sys_ports>
+       <gui>
+        <can_be_multipoint>true</can_be_multipoint>
+        <wires>
+         <wire>
+          <first_route>true</first_route>
+          <stroke_width>1</stroke_width>
+          <start_port>
+           <io_reference>38</io_reference>
+          </start_port>
+          <end_port>
+           <io_reference>33</io_reference>
+          </end_port>
+          <segments>
+           <segment x1="25119" y1="25259" x2="25119" y2="25189" orientation="2"/>
+           <segment x1="25119" y1="25189" x2="25195" y2="25189" orientation="-1"/>
+          </segments>
+         </wire>
+         <wire>
+          <first_route>true</first_route>
+          <stroke_width>1</stroke_width>
+          <start_port>
+           <io_reference>38</io_reference>
+          </start_port>
+          <end_port>
+           <io_reference>40</io_reference>
+          </end_port>
+          <segments>
+           <segment x1="25085" y1="25259" x2="25375" y2="25259" orientation="-1"/>
+           <segment x1="25375" y1="25259" x2="25375" y2="25337" orientation="-2"/>
+           <segment x1="25375" y1="25337" x2="25482" y2="25337" orientation="-1"/>
+          </segments>
+         </wire>
+        </wires>
+       </gui>
+      </connection>
+      <connection io_id="51">
+       <name>C_3</name>
+       <sys_ports>
+        <io_reference>34</io_reference>
+        <io_reference>31</io_reference>
+       </sys_ports>
+       <gui>
+        <can_be_multipoint>true</can_be_multipoint>
+        <wires>
+         <wire>
+          <first_route>true</first_route>
+          <stroke_width>1</stroke_width>
+          <start_port>
+           <io_reference>34</io_reference>
+          </start_port>
+          <end_port>
+           <io_reference>31</io_reference>
+          </end_port>
+          <segments>
+           <segment x1="25195" y1="25212" x2="25175" y2="25212" orientation="1"/>
+           <segment x1="25175" y1="25212" x2="25175" y2="25383" orientation="-2"/>
+          </segments>
+         </wire>
+        </wires>
+       </gui>
+      </connection>
+      <connection io_id="52">
+       <name>C_4</name>
+       <sys_ports>
+        <io_reference>47</io_reference>
+        <io_reference>43</io_reference>
+       </sys_ports>
+       <gui>
+        <can_be_multipoint>true</can_be_multipoint>
+        <wires>
+         <wire>
+          <first_route>true</first_route>
+          <stroke_width>1</stroke_width>
+          <start_port>
+           <io_reference>47</io_reference>
+          </start_port>
+          <end_port>
+           <io_reference>43</io_reference>
+          </end_port>
+          <segments>
+           <segment x1="25541" y1="25188" x2="25652" y2="25188" orientation="-1"/>
+           <segment x1="25652" y1="25188" x2="25652" y2="25299" orientation="-2"/>
+           <segment x1="25652" y1="25299" x2="25319" y2="25299" orientation="1"/>
+           <segment x1="25319" y1="25299" x2="25319" y2="25406" orientation="-2"/>
+           <segment x1="25319" y1="25406" x2="25482" y2="25406" orientation="-1"/>
+          </segments>
+         </wire>
+        </wires>
+       </gui>
+      </connection>
+     </connections>
+     <dictionary/>
+     <gui>
+      <gui_base_block>
+       <orientation>2</orientation>
+       <shape>0</shape>
+       <angle>-1</angle>
+       <bounds x="0" y="0" width="0" height="0"/>
+      </gui_base_block>
+     </gui>
+     <create_own_target_locations_for_all_ports/>
+    </sys_hierarchical_block>
+   </hardware_system>
+  </system>
+  <remap_configurations/>
+  <remap_manager/>
+  <memory_map>
+   <links/>
+  </memory_map>
+  <bpj_project>
+   <csc_embedded_xml_version>2007.1</csc_embedded_xml_version>
+   <csc_embedded_xml>&lt;registry>
+&lt;table n=&quot;Debug&quot; b=&quot;cwr&quot;>
+  &lt;d n=&quot;__isa__&quot;             >config_t&lt;/d>
+  &lt;d n=&quot;active_config&quot;       >true&lt;/d>
+  &lt;m n=&quot;pct_build_config&quot;    >pct_build_config.0&lt;/m>
+  &lt;l n=&quot;pct_include_files&quot;   >pct_include_files.0&lt;/l>
+  &lt;l n=&quot;pct_ip_scripts&quot;      >pct_ip_scripts.0&lt;/l>
+  &lt;m n=&quot;pct_lib_config_Debug&quot;>pct_lib_config_Debug.0&lt;/m>
+  &lt;l n=&quot;pct_library_configs&quot; >pct_library_configs.0&lt;/l>
+  &lt;d n=&quot;pct_linker_flags&quot;    >&lt;/d>
+  &lt;d n=&quot;pct_main_args&quot;       >--cwr_properties_xml Properties.xml&lt;/d>
+  &lt;d n=&quot;pct_project_file&quot;    >/home/michael61112/HW/HW2/Project&lt;/d>
+  &lt;l n=&quot;pct_source_files&quot;    >pct_source_files.0&lt;/l>
+&lt;/table>
+&lt;table n=&quot;Debug.Build&quot; b=&quot;Debug&quot;>
+  &lt;d n=&quot;enable-inno-runtime&quot;  >false&lt;/d>
+  &lt;d n=&quot;encapsulated-netlist&quot; >true&lt;/d>
+  &lt;d n=&quot;export_type&quot;          >DYNAMIC NETLIST&lt;/d>
+  &lt;d n=&quot;library_configuration&quot;>Debug&lt;/d>
+  &lt;d n=&quot;main_configuration&quot;   >&lt;/d>
+&lt;/table>
+&lt;table n=&quot;Debug.Build.buildInfo.A&quot; b=&quot;Debug.Build&quot;>
+  &lt;d n=&quot;__isa__&quot;       >build_info_t&lt;/d>
+  &lt;d n=&quot;generic-loader&quot;>false&lt;/d>
+  &lt;l n=&quot;ip_scripts&quot;    >ip_scripts.0&lt;/l>
+  &lt;d n=&quot;ld_flags&quot;      > &lt;/d>
+  &lt;l n=&quot;pp_dirs&quot;       >pp_dirs.0&lt;/l>
+  &lt;l n=&quot;sources&quot;       >sources.0&lt;/l>
+&lt;/table>
+&lt;table n=&quot;Debug.Launch&quot; b=&quot;Debug&quot;/>
+&lt;table n=&quot;Debug.Run.runInfo&quot; b=&quot;Debug.Launch&quot;>
+  &lt;d n=&quot;__isa__&quot;      >run_info_t&lt;/d>
+  &lt;d n=&quot;args&quot;         > --cwr_properties_xml Properties.xml&lt;/d>
+  &lt;d n=&quot;maf&quot;          >mem_map&lt;/d>
+  &lt;m n=&quot;vlog_compopts&quot;>vlog_compopts.0&lt;/m>
+&lt;/table>
+&lt;table n=&quot;cwr&quot;>
+  &lt;d n=&quot;CurrentConfig&quot;>Debug&lt;/d>
+&lt;/table>
+&lt;table n=&quot;ip_scripts.0&quot;>
+  &lt;d n=&quot;aaaa&quot;>cwr/logicalnames.tcl&lt;/d>
+  &lt;d n=&quot;aaab&quot;>cwr/pct_build_callback.tcl&lt;/d>
+&lt;/table>
+&lt;table n=&quot;pct_build_config.0&quot;>
+  &lt;d n=&quot;Clock/Clock&quot;                  >FromSource&lt;/d>
+  &lt;d n=&quot;Monitor/Monitor&quot;              >FromSource&lt;/d>
+  &lt;d n=&quot;Neural_Network/Neural_Network&quot;>FromSource&lt;/d>
+  &lt;d n=&quot;Neuron/Neuron&quot;                >FromSource&lt;/d>
+  &lt;d n=&quot;Pattern/Pattern&quot;              >FromSource&lt;/d>
+  &lt;d n=&quot;Reset/Reset&quot;                  >FromSource&lt;/d>
+&lt;/table>
+&lt;table n=&quot;pct_include_files.0&quot;>
+  &lt;d n=&quot;aaaa&quot;>.&lt;/d>
+&lt;/table>
+&lt;table n=&quot;pct_ip_scripts.0&quot;>
+  &lt;d n=&quot;aaaa&quot;>cwr/logicalnames.tcl&lt;/d>
+  &lt;d n=&quot;aaab&quot;>cwr/pct_build_callback.tcl&lt;/d>
+&lt;/table>
+&lt;table n=&quot;pct_lib_config_Debug.0&quot;>
+  &lt;d n=&quot;AMBA_PL&quot;                   >BuildFromSource&lt;/d>
+  &lt;d n=&quot;AMBA_TLM2_BL&quot;              >BuildFromSource&lt;/d>
+  &lt;d n=&quot;AMBA_TLM2_LT_PL&quot;           >BuildFromSource&lt;/d>
+  &lt;d n=&quot;AXI_PL&quot;                    >BuildFromSource&lt;/d>
+  &lt;d n=&quot;CCSS_API_PL&quot;               >BuildFromSource&lt;/d>
+  &lt;d n=&quot;ExampleCache&quot;              >BuildFromSource&lt;/d>
+  &lt;d n=&quot;ExampleDMA&quot;                >BuildFromSource&lt;/d>
+  &lt;d n=&quot;ExampleInterruptController&quot;>BuildFromSource&lt;/d>
+  &lt;d n=&quot;ExampleMemory&quot;             >BuildFromSource&lt;/d>
+  &lt;d n=&quot;ExampleTimer&quot;              >BuildFromSource&lt;/d>
+  &lt;d n=&quot;FIFO_PL&quot;                   >BuildFromSource&lt;/d>
+  &lt;d n=&quot;FTModelingExamples&quot;        >BuildFromSource&lt;/d>
+  &lt;d n=&quot;GENERIC_PL&quot;                >BuildFromSource&lt;/d>
+  &lt;d n=&quot;GENERIC_TLM2&quot;              >BuildFromSource&lt;/d>
+  &lt;d n=&quot;MCO&quot;                       >BuildFromSource&lt;/d>
+  &lt;d n=&quot;MCOPower&quot;                  >BuildFromSource&lt;/d>
+  &lt;d n=&quot;MemoryCheck&quot;               >BuildFromSource&lt;/d>
+  &lt;d n=&quot;MultiSimCANLib&quot;            >BuildFromSource&lt;/d>
+  &lt;d n=&quot;MultiSimLib&quot;               >BuildFromSource&lt;/d>
+  &lt;d n=&quot;PAMTraining&quot;               >BuildFromSource&lt;/d>
+  &lt;d n=&quot;PDMTraining&quot;               >BuildFromSource&lt;/d>
+  &lt;d n=&quot;PV_BL&quot;                     >BuildFromSource&lt;/d>
+  &lt;d n=&quot;PowerModeling&quot;             >BuildFromSource&lt;/d>
+  &lt;d n=&quot;SCML_BL&quot;                   >BuildFromSource&lt;/d>
+  &lt;d n=&quot;SCML_TM_PL&quot;                >BuildFromSource&lt;/d>
+  &lt;d n=&quot;TLM2ModelingExamples&quot;      >BuildFromSource&lt;/d>
+  &lt;d n=&quot;TLM2_PL&quot;                   >BuildFromSource&lt;/d>
+  &lt;d n=&quot;TLM2_PROTOCOLS&quot;            >BuildFromSource&lt;/d>
+  &lt;d n=&quot;TclInitiator&quot;              >BuildFromSource&lt;/d>
+  &lt;d n=&quot;UPFTraining&quot;               >BuildFromSource&lt;/d>
+  &lt;d n=&quot;VSI_CONNECTOR_BLOCKS&quot;      >BuildFromSource&lt;/d>
+  &lt;d n=&quot;WDOG&quot;                      >BuildFromSource&lt;/d>
+&lt;/table>
+&lt;table n=&quot;pct_library_configs.0&quot;>
+  &lt;d n=&quot;aaaa&quot;>Debug&lt;/d>
+&lt;/table>
+&lt;table n=&quot;pct_source_files.0&quot;>
+  &lt;d n=&quot;aaaa&quot;>../Monitor.cpp&lt;/d>
+  &lt;d n=&quot;aaab&quot;>../Neuron.cpp&lt;/d>
+  &lt;d n=&quot;aaac&quot;>../Pattern.cpp&lt;/d>
+  &lt;d n=&quot;aaad&quot;>../clockreset.cpp&lt;/d>
+  &lt;d n=&quot;aaae&quot;>HARDWARE.cpp&lt;/d>
+&lt;/table>
+&lt;table n=&quot;pp_dirs.0&quot;>
+  &lt;d n=&quot;aaaa&quot;>.&lt;/d>
+&lt;/table>
+&lt;table n=&quot;sources.0&quot;>
+  &lt;d n=&quot;aaaa&quot;>../Monitor.cpp&lt;/d>
+  &lt;d n=&quot;aaab&quot;>../Neuron.cpp&lt;/d>
+  &lt;d n=&quot;aaac&quot;>../Pattern.cpp&lt;/d>
+  &lt;d n=&quot;aaad&quot;>../clockreset.cpp&lt;/d>
+  &lt;d n=&quot;aaae&quot;>HARDWARE.cpp&lt;/d>
+&lt;/table>
+&lt;table n=&quot;vlog_compopts.0&quot;>
+  &lt;d n=&quot;&quot;> &lt;/d>
+&lt;/table>
+&lt;/registry>
+</csc_embedded_xml>
+  </bpj_project>
+ </project>
+</pct_data>

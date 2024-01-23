@@ -1,0 +1,12 @@
+SOURCE=ConvergenSC/cwr_simulate.cpp
+COWAREHOME=/usr/cad/synopsys/pa_virtualizer/cur/SLS/linux
+PPFLAGS = -I"."
+CXXFLAGS = -fPIC
+CXX=gcc-5.2.0-64
+OPT_LEVEL= +O1
+SCSIM_OPTS=
+CXXFLAGS= $(CWR_SYSTEMC_CXXFLAGS) -g2   
+
+
+SCCFLAGS= +cache-objects
+

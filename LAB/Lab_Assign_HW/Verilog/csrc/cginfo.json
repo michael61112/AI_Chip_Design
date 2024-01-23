@@ -1,0 +1,114 @@
+{
+    "CurCompileUdps": {},
+    "MlibObjs": {},
+    "CurCompileModules": [
+        "...MASTER...",
+        "testfixture"
+    ],
+    "PrevCompiledModules": {
+        "testfixture": {
+            "JRBuQ_d": {
+                "bytes": 42610,
+                "mode": 4,
+                "mod": "testfixture",
+                "out": "JRBuQ_d.o",
+                "checksum": 0,
+                "archive": "archive.5/_prev_archive_1.a"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7379,
+                "mode": 4,
+                "mod": "...MASTER...",
+                "checksum": 0,
+                "out": "objs/amcQw_d.o"
+            }
+        }
+    },
+    "NameTable": {
+        "testfixture": [
+            "testfixture",
+            "JRBuQ",
+            "module",
+            1
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module",
+            2
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 68793,
+        "archive": "archive.5/_7864_archive_1.a"
+    },
+    "stat": {
+        "ru_self_cgstart": {
+            "ru_stime_sec": 0.035864,
+            "ru_utime_sec": 0.11476699999999999,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 95892,
+            "ru_minflt": 6555,
+            "ru_nvcsw": 19,
+            "ru_nivcsw": 2
+        },
+        "totalObjSize": 68793,
+        "quadSpeed": 51881.768151961631,
+        "ru_childs_end": {
+            "ru_stime_sec": 0.0034380000000000001,
+            "ru_utime_sec": 0.0011460000000000001,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 21860,
+            "ru_minflt": 175,
+            "ru_nvcsw": 1,
+            "ru_nivcsw": 1
+        },
+        "ru_childs_cgstart": {
+            "ru_stime_sec": 0.0,
+            "ru_utime_sec": 0.0,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 0,
+            "ru_minflt": 0,
+            "ru_nvcsw": 0,
+            "ru_nivcsw": 0
+        },
+        "ru_self_end": {
+            "ru_stime_sec": 0.043732,
+            "ru_utime_sec": 0.137299,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 105792,
+            "ru_minflt": 8578,
+            "ru_nvcsw": 20,
+            "ru_nivcsw": 2
+        },
+        "Frontend(%)": 83.589101158784828,
+        "nMops": 3303,
+        "peak_mem_kb": 220224,
+        "nQuads": 1169,
+        "mopSpeed": 146591.51429078638,
+        "mop/quad": 2.8254918733960652,
+        "outputSizePerQuad": 58.847733105218133,
+        "CodeGen(%)": 16.410898841215165
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.7864.json"
+    ],
+    "Misc": {
+        "csrc_abs": "/home/M12/michael61112/2023_Summer_Training/Lab_Assign_HW/Verilog/csrc",
+        "cwd": "/home/M12/michael61112/2023_Summer_Training/Lab_Assign_HW/Verilog",
+        "csrc": "csrc",
+        "archive_dir": "archive.5",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/M12/michael61112/2023_Summer_Training/Lab_Assign_HW/Verilog/simv.daidir",
+        "default_output_dir": "csrc"
+    },
+    "CompileStatus": "Successful"
+}

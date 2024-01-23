@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<parameters:ParametersRoot xmi:version="2.0" xmlns:parameters="http://parameters/1.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <instances name="HARDWARE">
+      <sets kind="BLOCK_PROPERTIES">
+         <ParameterElements editable="UNTIL_SIMULATION_BUILD" name="Name" type="STRING" value="HARDWARE" visibility="HIDDEN" xsi:type="parameters:Parameter"/>
+      </sets>
+      <sets kind="EXTRA_PROPERTIES">
+         <ParameterElements editable="UNTIL_SIMULATION_START" name="property_xml_file" type="STRING" value="Properties.xml" visibility="ASSEMBLY" xsi:type="parameters:Parameter"/>
+         <ParameterElements editable="UNTIL_SIMULATION_START" name="system_hierarchy_xml_file" type="STRING" value="SystemHierarchy.xml" visibility="ASSEMBLY" xsi:type="parameters:Parameter"/>
+         <ParameterElements name="task_modeling" xsi:type="parameters:Group">
+            <ParameterElements editable="UNTIL_SIMULATION_START" name="clock_period" type="DOUBLE" value="1" visibility="ASSEMBLY" xsi:type="parameters:Parameter"/>
+            <ParameterElements editable="UNTIL_SIMULATION_START" name="pre_emption" type="BOOLEAN" value="false" visibility="ASSEMBLY" xsi:type="parameters:Parameter"/>
+            <ParameterElements editable="UNTIL_SIMULATION_START" name="resources" type="INTEGER" value="1" visibility="ASSEMBLY" xsi:type="parameters:Parameter"/>
+            <ParameterElements editable="UNTIL_SIMULATION_START" name="scheduler" type="STRING" value="round_robin" visibility="ASSEMBLY" xsi:type="parameters:Parameter"/>
+            <ParameterElements editable="UNTIL_SIMULATION_START" name="time_slice" type="DOUBLE" value="30" visibility="ASSEMBLY" xsi:type="parameters:Parameter"/>
+            <ParameterElements editable="UNTIL_SIMULATION_START" name="time_slicing" type="BOOLEAN" value="false" visibility="ASSEMBLY" xsi:type="parameters:Parameter"/>
+         </ParameterElements>
+         <ParameterElements name="pct" xsi:type="parameters:Group">
+            <ParameterElements name="runtime" xsi:type="parameters:Group">
+               <ParameterElements editable="UNTIL_SIMULATION_START" name="simulation_mode" type="STRING" value="MODE_FULL_SIMULATION" visibility="ASSEMBLY" xsi:type="parameters:Parameter"/>
+               <ParameterElements editable="UNTIL_SIMULATION_START" name="dynamic_load_info" type="STRING" value="" visibility="ASSEMBLY" xsi:type="parameters:Parameter"/>
+            </ParameterElements>
+         </ParameterElements>
+         <ParameterElements editable="UNTIL_SIMULATION_START" name="runtime_disabled" type="BOOLEAN" value="false" visibility="ADVANCED" xsi:type="parameters:Parameter"/>
+      </sets>
+      <instances name="i_DT">
+         <sets kind="BLOCK_PROPERTIES">
+            <ParameterElements editable="UNTIL_SIMULATION_BUILD" name="Name" type="STRING" value="i_DT" visibility="HIDDEN" xsi:type="parameters:Parameter"/>
+         </sets>
+         <sets kind="TEMPLATE_ARGUMENTS"/>
+         <sets kind="CONSTRUCTOR_ARGUMENTS"/>
+         <sets kind="SCML_PROPERTIES"/>
+         <sets kind="EXTRA_PROPERTIES">
+            <ParameterElements editable="UNTIL_SIMULATION_START" name="runtime_disabled" type="BOOLEAN" value="false" visibility="ADVANCED" xsi:type="parameters:Parameter"/>
+         </sets>
+      </instances>
+      <instances name="i_MON">
+         <sets kind="BLOCK_PROPERTIES">
+            <ParameterElements editable="UNTIL_SIMULATION_BUILD" name="Name" type="STRING" value="i_MON" visibility="HIDDEN" xsi:type="parameters:Parameter"/>
+         </sets>
+         <sets kind="TEMPLATE_ARGUMENTS"/>
+         <sets kind="CONSTRUCTOR_ARGUMENTS"/>
+         <sets kind="SCML_PROPERTIES"/>
+         <sets kind="EXTRA_PROPERTIES">
+            <ParameterElements editable="UNTIL_SIMULATION_START" name="runtime_disabled" type="BOOLEAN" value="false" visibility="ADVANCED" xsi:type="parameters:Parameter"/>
+         </sets>
+      </instances>
+      <instances name="i_RAM">
+         <sets kind="BLOCK_PROPERTIES">
+            <ParameterElements editable="UNTIL_SIMULATION_BUILD" name="Name" type="STRING" value="i_RAM" visibility="HIDDEN" xsi:type="parameters:Parameter"/>
+         </sets>
+         <sets kind="TEMPLATE_ARGUMENTS"/>
+         <sets kind="CONSTRUCTOR_ARGUMENTS"/>
+         <sets kind="SCML_PROPERTIES"/>
+         <sets kind="EXTRA_PROPERTIES">
+            <ParameterElements editable="UNTIL_SIMULATION_START" name="runtime_disabled" type="BOOLEAN" value="false" visibility="ADVANCED" xsi:type="parameters:Parameter"/>
+         </sets>
+      </instances>
+      <instances name="i_sti_ROM">
+         <sets kind="BLOCK_PROPERTIES">
+            <ParameterElements editable="UNTIL_SIMULATION_BUILD" name="Name" type="STRING" value="i_sti_ROM" visibility="HIDDEN" xsi:type="parameters:Parameter"/>
+         </sets>
+         <sets kind="TEMPLATE_ARGUMENTS"/>
+         <sets kind="CONSTRUCTOR_ARGUMENTS"/>
+         <sets kind="SCML_PROPERTIES"/>
+         <sets kind="EXTRA_PROPERTIES">
+            <ParameterElements editable="UNTIL_SIMULATION_START" name="runtime_disabled" type="BOOLEAN" value="false" visibility="ADVANCED" xsi:type="parameters:Parameter"/>
+         </sets>
+      </instances>
+   </instances>
+</parameters:ParametersRoot>

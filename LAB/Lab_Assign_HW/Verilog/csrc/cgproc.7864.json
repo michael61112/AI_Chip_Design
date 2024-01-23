@@ -1,0 +1,86 @@
+{
+    "Modules": {
+        "...MASTER...": {
+            "start_perf": [
+                0.34360694885253906,
+                0.114826,
+                0.035882999999999998,
+                206956,
+                220224,
+                1691572613.0701571
+            ],
+            "end_perf": [
+                0.35297799110412598,
+                0.116853,
+                0.038612,
+                209672,
+                220224
+            ],
+            "nQuads": 0,
+            "nMops": 0
+        },
+        "testfixture": {
+            "start_perf": [
+                0.35312581062316895,
+                0.116965,
+                0.038649000000000003,
+                209672,
+                220224,
+                1691572613.0796759
+            ],
+            "Compiled": "Yes",
+            "nMops": 3303,
+            "Compiled Times": 6,
+            "end_perf": [
+                0.36929583549499512,
+                0.13214100000000001,
+                0.039641999999999997,
+                216840,
+                220224
+            ],
+            "nQuads": 1169
+        }
+    },
+    "CompUnits": {},
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        },
+        "JRBuQ_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.5/_7864_archive_1.a",
+            "objects": [
+                [
+                    "amcQwB.o",
+                    68793
+                ]
+            ],
+            "size": 68793
+        }
+    ],
+    "stat": {
+        "ru_self_end": {
+            "ru_stime_sec": 0.043664000000000001,
+            "ru_utime_sec": 0.13708699999999999,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 105792,
+            "ru_minflt": 8576,
+            "ru_nvcsw": 20,
+            "ru_nivcsw": 2
+        },
+        "ru_childs_end": {
+            "ru_stime_sec": 0.0034380000000000001,
+            "ru_utime_sec": 0.0011460000000000001,
+            "ru_majflt": 0,
+            "ru_maxrss_kb": 21860,
+            "ru_minflt": 175,
+            "ru_nvcsw": 1,
+            "ru_nivcsw": 1
+        },
+        "peak_mem_kb": 220224
+    }
+}

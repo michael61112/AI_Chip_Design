@@ -1,0 +1,1 @@
+vpa::start_simulation Debug/sim {/home/M12/michael61112/2023_Summer_Training/Lab_Assign_HW/SystemC/export} {--cwr_wait --cwr_properties_xml Properties.xml} 120

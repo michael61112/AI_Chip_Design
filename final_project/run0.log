@@ -1,0 +1,94 @@
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                ############                                    
+                ################################                
+                ################################                
+                          ######################                
+                                        ########                
+                                      ########                  
+                                      ########                  
+                                    ########                    
+                                    ########                    
+                                  ########                      
+                                  ######                        
+                                ########                        
+                              ########                          
+                            ##########                          
+                            ########                            
+                          ##########                            
+                          ########                              
+                        ##########                              
+                        ##########                              
+                        ########                                
+                                                                
+                                                                
+                                                                
+<Info> Execution start!!
+<Info> Read model file ... Done.
+<Info> Print layers infomation.
+============================================================================
+ Layer |     Type     Input Size    Output Size     Weight Size   Act Func. 
+----------------------------------------------------------------------------
+     0 |     CONV        32x32x1        28x28x6         5x5x1x6       relu
+     1 |  MAXPOOL        28x28x6        14x14x6               0          -
+     2 |     CONV        14x14x6       10x10x16        5x5x6x16       relu
+     3 |  MAXPOOL       10x10x16         5x5x16               0          -
+     4 |       FC            400            120         400x120       relu
+     5 |       FC            120             84          120x84       relu
+     6 |       FC             84             10           84x10       relu
+============================================================================
+<Info> Partition layers to PEs ... 
+============================================================
+ Layer |     Type    Input    Weight    PSum    Bias    PE  
+------------------------------------------------------------
+   max |              2000      2000     200     200     -
+------------------------------------------------------------
+     0 |     CONV     1024       150     784       6     1
+     1 |  MAXPOOL      784         0       0       0     1
+     2 |     CONV      196       400     100      16     6
+     3 |  MAXPOOL      100         0       0       0     1
+     4 |       FC       16      1920     120     120    25
+     5 |       FC       20      1680      84      84     6
+     6 |       FC       84       840      10      10     1
+============================================================
+PE utilization = 41 / 42
+<Info> Partition successfully.
+<Info> Finish placing all layers to PEs at 46 th cycle.
+<Info> Start loading parameters
+<Info> Finish loading all parameters to PEs at 61754 th cycle.
+<Info> Start computation at 62780 th cycle.
+<Info> Monitor detect first output at 72661 th cycle.
+0: result = 0.424867
+1: result = 0
+2: result = 3.34409
+3: result = 1.07616
+4: result = 0
+5: result = 0
+6: result = 0
+7: result = 13.1719
+8: result = 0
+9: result = 1.70831
+<Info> Monitor detect last output at 72670 th cycle.
+<Info> The answer is 7.
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+<Info> Execution complete!!
+<Info> Total execution 72670 cycles.
+<Info> Print timing report.
+=================================
+  items             |    cycles  
+---------------------------------
+  placement         |        46
+  load parameters   |     61708
+  load inputs       |      1026
+  computation       |      9890
+---------------------------------
+  total             |     72670
+=================================

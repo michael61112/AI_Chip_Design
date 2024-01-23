@@ -1,0 +1,3152 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pct_data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+ <version>3.0</version>
+ <fingerprint>30d4612c4ebcfff67124a631916127badc3e289a</fingerprint>
+ <project>
+  <system_library>
+   <name>FP1</name>
+   <examples/>
+   <protocols/>
+   <blocks>
+    <block>
+     <name>CPU</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="1">
+       <name>clk</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="2">
+       <name>rst_n</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="3">
+       <name>o_load_param_flg</name>
+       <category>CLOCK</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <slave/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>CLOCK</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="4">
+       <name>o_load_input_flg</name>
+       <category>CLOCK</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <slave/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>CLOCK</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="5">
+       <name>o_layer_info</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <master/>
+       <out/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="6">
+       <name>o_pos_info</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <master/>
+       <out/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="7">
+       <name>o_setup_router</name>
+       <category>CLOCK</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <slave/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>CLOCK</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="8">
+       <class_name>CPU</class_name>
+       <real_class_name>CPU</real_class_name>
+       <constructors>
+        <constructor io_id="9"/>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>clk</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>rst_n</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <tlm_port>
+         <name>o_param_size_info</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_fifo_out_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_fifo_out_if&lt;Size>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_fifo_out_if&lt;Size></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>o_load_param_flg</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_inout_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_inout_if&lt;bool>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_inout_if&lt;bool></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>o_load_input_flg</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_inout_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_inout_if&lt;bool>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_inout_if&lt;bool></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>i_finish_flg</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_in_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_in_if&lt;bool>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_in_if&lt;bool></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>o_layer_info</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_inout_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_inout_if&lt;LayerInfo>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_inout_if&lt;LayerInfo></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>o_setup_PE</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_inout_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_inout_if&lt;bool>, 42, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_inout_if&lt;bool></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>o_pos_info</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_inout_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_inout_if&lt;PosInfo>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_inout_if&lt;PosInfo></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>o_setup_router</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_inout_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_inout_if&lt;bool>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_inout_if&lt;bool></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>clk</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>clk</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>rst_n</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>rst_n</encap_port>
+        </bca_mapping>
+        <tlm_mapping>
+         <block_port>o_load_param_flg</block_port>
+         <encap_port>o_load_param_flg</encap_port>
+        </tlm_mapping>
+        <tlm_mapping>
+         <block_port>o_load_input_flg</block_port>
+         <encap_port>o_load_input_flg</encap_port>
+        </tlm_mapping>
+        <tlm_mapping>
+         <block_port>o_layer_info</block_port>
+         <encap_port>o_layer_info</encap_port>
+        </tlm_mapping>
+        <tlm_mapping>
+         <block_port>o_pos_info</block_port>
+         <encap_port>o_pos_info</encap_port>
+        </tlm_mapping>
+        <tlm_mapping>
+         <block_port>o_setup_router</block_port>
+         <encap_port>o_setup_router</encap_port>
+        </tlm_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>1</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>2</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>3</io_reference>
+         </port_ref>
+         <protocol>
+          <description>CLOCK</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" value="port"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>4</io_reference>
+         </port_ref>
+         <protocol>
+          <description>CLOCK</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" value="port"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>5</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="LayerInfo" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" value="port"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>6</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="PosInfo" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" value="port"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>7</io_reference>
+         </port_ref>
+         <protocol>
+          <description>CLOCK</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" value="port"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>source_file</name>
+           <setting_value>
+            <value>CPU.cpp</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>CPU.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+    <block>
+     <name>Monitor</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="10">
+       <name>clk</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="11">
+       <name>rst_n</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="12">
+       <class_name>Monitor</class_name>
+       <real_class_name>Monitor</real_class_name>
+       <constructors>
+        <constructor io_id="13"/>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>clk</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>rst_n</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <tlm_port>
+         <name>i_data</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_fifo_in_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_fifo_in_if&lt;Flit>, 6, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_fifo_in_if&lt;Flit></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>clk</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>clk</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>rst_n</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>rst_n</encap_port>
+        </bca_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>10</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>11</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>source_file</name>
+           <setting_value>
+            <value>Monitor.cpp</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>Monitor.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+    <block>
+     <name>PE</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="14">
+       <name>clk</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="15">
+       <name>rst_n</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="16">
+       <class_name>PE</class_name>
+       <real_class_name>PE</real_class_name>
+       <constructors>
+        <constructor io_id="17"/>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>clk</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>rst_n</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <tlm_port>
+         <name>i_layer_info</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_in_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_in_if&lt;LayerInfo>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_in_if&lt;LayerInfo></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>i_setup</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_in_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_in_if&lt;bool>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_in_if&lt;bool></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>i_data</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_fifo_in_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_fifo_in_if&lt;Flit>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_fifo_in_if&lt;Flit></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>o_data</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_fifo_out_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_fifo_out_if&lt;Flit>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_fifo_out_if&lt;Flit></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>clk</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>clk</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>rst_n</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>rst_n</encap_port>
+        </bca_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>14</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>15</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>source_file</name>
+           <setting_value>
+            <value>PE.cpp</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>PE.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+    <block>
+     <name>ROM</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="18">
+       <name>clk</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="19">
+       <name>o_finish_flg</name>
+       <category>CLOCK</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <slave/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>CLOCK</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="20">
+       <class_name>ROM</class_name>
+       <real_class_name>ROM</real_class_name>
+       <constructors>
+        <constructor io_id="21"/>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>clk</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <tlm_port>
+         <name>i_param_size_info</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_fifo_in_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_fifo_in_if&lt;Size>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_fifo_in_if&lt;Size></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>i_load_param_flg</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_in_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_in_if&lt;bool>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_in_if&lt;bool></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>i_load_input_flg</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_in_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_in_if&lt;bool>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_in_if&lt;bool></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>o_finish_flg</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_inout_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_inout_if&lt;bool>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_inout_if&lt;bool></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>o_data</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_fifo_out_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_fifo_out_if&lt;Flit>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_fifo_out_if&lt;Flit></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>clk</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>clk</encap_port>
+        </bca_mapping>
+        <tlm_mapping>
+         <block_port>o_finish_flg</block_port>
+         <encap_port>o_finish_flg</encap_port>
+        </tlm_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>18</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>19</io_reference>
+         </port_ref>
+         <protocol>
+          <description>CLOCK</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" value="port"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>source_file</name>
+           <setting_value>
+            <value>ROM.cpp</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>ROM.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+    <block>
+     <name>Router</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="22">
+       <name>clk</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+      <port io_id="23">
+       <name>rst_n</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <in/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="24">
+       <class_name>Router</class_name>
+       <real_class_name>Router</real_class_name>
+       <constructors>
+        <constructor io_id="25"/>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>clk</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <bca_port>
+         <name>rst_n</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <in/>
+        </bca_port>
+        <tlm_port>
+         <name>i_pos_info</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_in_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_in_if&lt;PosInfo>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_in_if&lt;PosInfo></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>i_setup</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_signal_in_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_signal_in_if&lt;bool>, 1, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_signal_in_if&lt;bool></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>i_data</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_fifo_in_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_fifo_in_if&lt;Flit>, 5, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_fifo_in_if&lt;Flit></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+        <tlm_port>
+         <name>o_data</name>
+         <port_type>port</port_type>
+         <type_definition>sc_core::sc_port&lt;typename IF, int N = 1, enum sc_core::sc_port_policy { sc_core::SC_ONE_OR_MORE_BOUND = 0, sc_core::SC_ZERO_OR_MORE_BOUND = 1, sc_core::SC_ALL_BOUND = 2 } P = sc_core::SC_ONE_OR_MORE_BOUND></type_definition>
+         <type_definition>sc_core::sc_fifo_out_if&lt;typename T></type_definition>
+         <datatype>
+          <value>sc_core::sc_port&lt;sc_core::sc_fifo_out_if&lt;Flit>, 5, sc_core::SC_ONE_OR_MORE_BOUND></value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <interfaces>
+          <parameter>
+           <name>Used_SystemC_Interface</name>
+           <value>
+            <type>sfTypeParameter</type>
+            <default>sc_core::sc_fifo_out_if&lt;Flit></default>
+           </value>
+          </parameter>
+         </interfaces>
+        </tlm_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>clk</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>clk</encap_port>
+        </bca_mapping>
+        <bca_mapping>
+         <block_port>rst_n</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>rst_n</encap_port>
+        </bca_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>22</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+        <encap_prot>
+         <port_ref>
+          <io_reference>23</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>source_file</name>
+           <setting_value>
+            <value>Router.cpp</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>Router.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+    <block>
+     <name>Clock</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="26">
+       <name>clk</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <out/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="27">
+       <class_name>Clock</class_name>
+       <real_class_name>Clock</real_class_name>
+       <constructors>
+        <constructor io_id="28">
+         <parameter>
+          <name>clock_cycle</name>
+          <value>
+           <type>sfIntegerParameter</type>
+           <default>0</default>
+           <int_restrict>
+            <range_min>-2147483648</range_min>
+            <range_max>2147483647</range_max>
+           </int_restrict>
+          </value>
+         </parameter>
+        </constructor>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>clk</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <out/>
+        </bca_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>clk</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>clk</encap_port>
+        </bca_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>26</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>source_file</name>
+           <setting_value>
+            <value>clockreset.cpp</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>clockreset.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+    <block>
+     <name>Reset</name>
+     <shape>0</shape>
+     <ports>
+      <port io_id="29">
+       <name>rst_n</name>
+       <category>CONTROL</category>
+       <abstraction_level>BCA</abstraction_level>
+       <cardinality>one</cardinality>
+       <addressing_mode>BYTE</addressing_mode>
+       <bca_cosim_supported>false</bca_cosim_supported>
+       <undefined_masterslaveness/>
+       <out/>
+       <possible_protocols>
+        <protocol>
+         <description>Default</description>
+        </protocol>
+       </possible_protocols>
+       <target_location_info>
+        <nr_of_remap_states>1</nr_of_remap_states>
+       </target_location_info>
+       <kinds>
+        <kind>sc_port</kind>
+        <kind>sc_export</kind>
+       </kinds>
+      </port>
+     </ports>
+     <encapsulations>
+      <encapsulation io_id="30">
+       <class_name>Reset</class_name>
+       <real_class_name>Reset</real_class_name>
+       <constructors>
+        <constructor io_id="31">
+         <parameter>
+          <name>reset_time</name>
+          <value>
+           <type>sfIntegerParameter</type>
+           <default>0</default>
+           <int_restrict>
+            <range_min>-2147483648</range_min>
+            <range_max>2147483647</range_max>
+           </int_restrict>
+          </value>
+         </parameter>
+        </constructor>
+       </constructors>
+       <ports>
+        <bca_port>
+         <name>rst_n</name>
+         <datatype>
+          <value>bool</value>
+         </datatype>
+         <sc_port_type_regular_port/>
+         <out/>
+        </bca_port>
+       </ports>
+       <mappings>
+        <bca_mapping>
+         <block_port>rst_n</block_port>
+         <block_protocol>Default</block_protocol>
+         <block_pin>pin</block_pin>
+         <encap_port>rst_n</encap_port>
+        </bca_mapping>
+       </mappings>
+       <encap_prots>
+        <encap_prot>
+         <port_ref>
+          <io_reference>29</io_reference>
+         </port_ref>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol Common Parameters</name>
+            <parameter_list>
+             <parameter_value name="data_type" value="bool" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+        </encap_prot>
+       </encap_prots>
+       <encap_language>SystemC</encap_language>
+       <configurations>
+        <configuration>
+         <name>FromSource</name>
+         <class>
+          <name>package</name>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>source_file</name>
+           <setting_value>
+            <value>clockreset.cpp</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>header_file</name>
+           <setting_value>
+            <value>clockreset.h</value>
+           </setting_value>
+          </setting>
+         </class>
+         <class>
+          <name>build</name>
+          <setting>
+           <name>enabled</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>debug</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>optimized</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>assertions</name>
+           <setting_value>
+            <value>1</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>dynamic_library</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>inno_runtime</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+          <setting>
+           <name>scampi</name>
+           <setting_value>
+            <value>0</value>
+           </setting_value>
+          </setting>
+         </class>
+        </configuration>
+       </configurations>
+       <default_configuration>FromSource</default_configuration>
+      </encapsulation>
+     </encapsulations>
+     <dictionary/>
+    </block>
+   </blocks>
+  </system_library>
+  <all_libraries>
+  </all_libraries>
+  <export_directories>
+  </export_directories>
+  <system>
+   <hardware_system>
+    <sys_hierarchical_block io_id="32">
+     <sys_page>Default</sys_page>
+     <extra_parameters>
+      <parameter>
+       <name>property_xml_file</name>
+       <value>
+        <type>sfStringParameter</type>
+        <default>Properties.xml</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>system_hierarchy_xml_file</name>
+       <value>
+        <type>sfStringParameter</type>
+        <default>SystemHierarchy.xml</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>/task_modeling/clock_period</name>
+       <value>
+        <type>sfDoubleParameter</type>
+        <default>1</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>/task_modeling/pre_emption</name>
+       <value>
+        <type>sfBooleanParameter</type>
+        <default>false</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>/task_modeling/resources</name>
+       <value>
+        <type>sfIntegerParameter</type>
+        <default>1</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>/task_modeling/scheduler</name>
+       <value>
+        <type>sfStringParameter</type>
+        <default>round_robin</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>/task_modeling/time_slice</name>
+       <value>
+        <type>sfDoubleParameter</type>
+        <default>30</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+      <parameter>
+       <name>/task_modeling/time_slicing</name>
+       <value>
+        <type>sfBooleanParameter</type>
+        <default>false</default>
+        <visibility>Assembly</visibility>
+       </value>
+      </parameter>
+     </extra_parameters>
+     <parameters_set>
+      <parameters_value>
+       <name>Block properties</name>
+       <parameter_list>
+        <parameter_value name="Name" value="HARDWARE"/>
+       </parameter_list>
+      </parameters_value>
+      <parameters_value>
+       <name>Extra properties</name>
+       <parameter_list>
+        <parameter_value name="property_xml_file" value="Properties.xml" runtime="true"/>
+        <parameter_value name="system_hierarchy_xml_file" value="SystemHierarchy.xml" runtime="true"/>
+        <parameter_value name="/task_modeling/clock_period" value="1" runtime="true"/>
+        <parameter_value name="/task_modeling/pre_emption" value="false" runtime="true"/>
+        <parameter_value name="/task_modeling/resources" value="1" runtime="true"/>
+        <parameter_value name="/task_modeling/scheduler" value="round_robin" runtime="true"/>
+        <parameter_value name="/task_modeling/time_slice" value="30" runtime="true"/>
+        <parameter_value name="/task_modeling/time_slicing" value="false" runtime="true"/>
+       </parameter_list>
+      </parameters_value>
+     </parameters_set>
+     <sys_hierarchical_ports/>
+     <sys_pages>
+      <sys_page>Default</sys_page>
+     </sys_pages>
+     <sys_blocks>
+      <sys_block io_id="33">
+       <description>CPU</description>
+       <sys_page>Default</sys_page>
+       <parameters_set>
+        <parameters_value>
+         <name>Block properties</name>
+         <parameter_list>
+          <parameter_value name="Name" value="i_CPU"/>
+         </parameter_list>
+        </parameters_value>
+       </parameters_set>
+       <sys_ports>
+        <sys_port io_id="34">
+         <description>
+          <io_reference>1</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>25</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>2</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="35">
+         <description>
+          <io_reference>2</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>60</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>2</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="36">
+         <description>
+          <io_reference>3</io_reference>
+         </description>
+         <protocol>
+          <description>CLOCK</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+           <parameters_value>
+            <name>Protocol scml2_clock_if properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>68</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="37">
+         <description>
+          <io_reference>4</io_reference>
+         </description>
+         <protocol>
+          <description>CLOCK</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+           <parameters_value>
+            <name>Protocol scml2_clock_if properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>91</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="38">
+         <description>
+          <io_reference>5</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>22</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="39">
+         <description>
+          <io_reference>6</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>45</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="40">
+         <description>
+          <io_reference>7</io_reference>
+         </description>
+         <protocol>
+          <description>CLOCK</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+           <parameters_value>
+            <name>Protocol scml2_clock_if properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>114</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+       </sys_ports>
+       <selected_encap>
+        <io_reference>8</io_reference>
+       </selected_encap>
+       <selected_encap_constructor>
+        <io_reference>9</io_reference>
+       </selected_encap_constructor>
+       <encap_parameters_map>
+        <item>
+         <element>
+          <io_reference>8</io_reference>
+         </element>
+        </item>
+       </encap_parameters_map>
+       <encap_scml_properties_map>
+        <item>
+         <element>
+          <io_reference>8</io_reference>
+         </element>
+        </item>
+       </encap_scml_properties_map>
+       <encap_constructor_parameters_map>
+        <item>
+         <element>
+          <io_reference>9</io_reference>
+         </element>
+        </item>
+       </encap_constructor_parameters_map>
+       <dictionary/>
+       <gui>
+        <gui_base_block>
+         <orientation>2</orientation>
+         <shape>1</shape>
+         <angle>90</angle>
+         <bounds x="285" y="231" width="100" height="154"/>
+        </gui_base_block>
+       </gui>
+      </sys_block>
+      <sys_block io_id="41">
+       <description>Clock</description>
+       <sys_page>Default</sys_page>
+       <parameters_set>
+        <parameters_value>
+         <name>Block properties</name>
+         <parameter_list>
+          <parameter_value name="Name" value="i_Clock"/>
+         </parameter_list>
+        </parameters_value>
+       </parameters_set>
+       <sys_ports>
+        <sys_port io_id="42">
+         <description>
+          <io_reference>26</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>41</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-2</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+       </sys_ports>
+       <selected_encap>
+        <io_reference>27</io_reference>
+       </selected_encap>
+       <selected_encap_constructor>
+        <io_reference>28</io_reference>
+       </selected_encap_constructor>
+       <encap_parameters_map>
+        <item>
+         <element>
+          <io_reference>27</io_reference>
+         </element>
+        </item>
+       </encap_parameters_map>
+       <encap_scml_properties_map>
+        <item>
+         <element>
+          <io_reference>27</io_reference>
+         </element>
+        </item>
+       </encap_scml_properties_map>
+       <encap_constructor_parameters_map>
+        <item>
+         <element>
+          <io_reference>28</io_reference>
+         </element>
+        </item>
+       </encap_constructor_parameters_map>
+       <dictionary/>
+       <gui>
+        <gui_base_block>
+         <orientation>2</orientation>
+         <shape>1</shape>
+         <angle>90</angle>
+         <bounds x="214" y="516" width="100" height="100"/>
+        </gui_base_block>
+       </gui>
+      </sys_block>
+      <sys_block io_id="43">
+       <description>Monitor</description>
+       <sys_page>Default</sys_page>
+       <parameters_set>
+        <parameters_value>
+         <name>Block properties</name>
+         <parameter_list>
+          <parameter_value name="Name" value="i_Monitor"/>
+         </parameter_list>
+        </parameters_value>
+       </parameters_set>
+       <sys_ports>
+        <sys_port io_id="44">
+         <description>
+          <io_reference>10</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>22</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="45">
+         <description>
+          <io_reference>11</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>45</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+       </sys_ports>
+       <selected_encap>
+        <io_reference>12</io_reference>
+       </selected_encap>
+       <selected_encap_constructor>
+        <io_reference>13</io_reference>
+       </selected_encap_constructor>
+       <encap_parameters_map>
+        <item>
+         <element>
+          <io_reference>12</io_reference>
+         </element>
+        </item>
+       </encap_parameters_map>
+       <encap_scml_properties_map>
+        <item>
+         <element>
+          <io_reference>12</io_reference>
+         </element>
+        </item>
+       </encap_scml_properties_map>
+       <encap_constructor_parameters_map>
+        <item>
+         <element>
+          <io_reference>13</io_reference>
+         </element>
+        </item>
+       </encap_constructor_parameters_map>
+       <dictionary/>
+       <gui>
+        <gui_base_block>
+         <orientation>2</orientation>
+         <shape>1</shape>
+         <angle>90</angle>
+         <bounds x="619" y="245" width="100" height="100"/>
+        </gui_base_block>
+       </gui>
+      </sys_block>
+      <sys_block io_id="46">
+       <description>PE</description>
+       <sys_page>Default</sys_page>
+       <parameters_set>
+        <parameters_value>
+         <name>Block properties</name>
+         <parameter_list>
+          <parameter_value name="Name" value="i_PE"/>
+         </parameter_list>
+        </parameters_value>
+       </parameters_set>
+       <sys_ports>
+        <sys_port io_id="47">
+         <description>
+          <io_reference>14</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>22</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="48">
+         <description>
+          <io_reference>15</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>45</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+       </sys_ports>
+       <selected_encap>
+        <io_reference>16</io_reference>
+       </selected_encap>
+       <selected_encap_constructor>
+        <io_reference>17</io_reference>
+       </selected_encap_constructor>
+       <encap_parameters_map>
+        <item>
+         <element>
+          <io_reference>16</io_reference>
+         </element>
+        </item>
+       </encap_parameters_map>
+       <encap_scml_properties_map>
+        <item>
+         <element>
+          <io_reference>16</io_reference>
+         </element>
+        </item>
+       </encap_scml_properties_map>
+       <encap_constructor_parameters_map>
+        <item>
+         <element>
+          <io_reference>17</io_reference>
+         </element>
+        </item>
+       </encap_constructor_parameters_map>
+       <dictionary/>
+       <gui>
+        <gui_base_block>
+         <orientation>2</orientation>
+         <shape>1</shape>
+         <angle>90</angle>
+         <bounds x="531" y="433" width="100" height="100"/>
+        </gui_base_block>
+       </gui>
+      </sys_block>
+      <sys_block io_id="49">
+       <description>ROM</description>
+       <sys_page>Default</sys_page>
+       <parameters_set>
+        <parameters_value>
+         <name>Block properties</name>
+         <parameter_list>
+          <parameter_value name="Name" value="i_ROM"/>
+         </parameter_list>
+        </parameters_value>
+       </parameters_set>
+       <sys_ports>
+        <sys_port io_id="50">
+         <description>
+          <io_reference>18</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>22</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="51">
+         <description>
+          <io_reference>19</io_reference>
+         </description>
+         <protocol>
+          <description>CLOCK</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+           <parameters_value>
+            <name>Protocol scml2_clock_if properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>60</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+       </sys_ports>
+       <selected_encap>
+        <io_reference>20</io_reference>
+       </selected_encap>
+       <selected_encap_constructor>
+        <io_reference>21</io_reference>
+       </selected_encap_constructor>
+       <encap_parameters_map>
+        <item>
+         <element>
+          <io_reference>20</io_reference>
+         </element>
+        </item>
+       </encap_parameters_map>
+       <encap_scml_properties_map>
+        <item>
+         <element>
+          <io_reference>20</io_reference>
+         </element>
+        </item>
+       </encap_scml_properties_map>
+       <encap_constructor_parameters_map>
+        <item>
+         <element>
+          <io_reference>21</io_reference>
+         </element>
+        </item>
+       </encap_constructor_parameters_map>
+       <dictionary/>
+       <gui>
+        <gui_base_block>
+         <orientation>2</orientation>
+         <shape>1</shape>
+         <angle>90</angle>
+         <bounds x="-12" y="303" width="100" height="100"/>
+        </gui_base_block>
+       </gui>
+      </sys_block>
+      <sys_block io_id="52">
+       <description>Reset</description>
+       <sys_page>Default</sys_page>
+       <parameters_set>
+        <parameters_value>
+         <name>Block properties</name>
+         <parameter_list>
+          <parameter_value name="Name" value="i_Reset"/>
+         </parameter_list>
+        </parameters_value>
+       </parameters_set>
+       <sys_ports>
+        <sys_port io_id="53">
+         <description>
+          <io_reference>29</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>33</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-2</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+       </sys_ports>
+       <selected_encap>
+        <io_reference>30</io_reference>
+       </selected_encap>
+       <selected_encap_constructor>
+        <io_reference>31</io_reference>
+       </selected_encap_constructor>
+       <encap_parameters_map>
+        <item>
+         <element>
+          <io_reference>30</io_reference>
+         </element>
+        </item>
+       </encap_parameters_map>
+       <encap_scml_properties_map>
+        <item>
+         <element>
+          <io_reference>30</io_reference>
+         </element>
+        </item>
+       </encap_scml_properties_map>
+       <encap_constructor_parameters_map>
+        <item>
+         <element>
+          <io_reference>31</io_reference>
+         </element>
+        </item>
+       </encap_constructor_parameters_map>
+       <dictionary/>
+       <gui>
+        <gui_base_block>
+         <orientation>2</orientation>
+         <shape>1</shape>
+         <angle>90</angle>
+         <bounds x="350" y="515" width="100" height="100"/>
+        </gui_base_block>
+       </gui>
+      </sys_block>
+      <sys_block io_id="54">
+       <description>Router</description>
+       <sys_page>Default</sys_page>
+       <parameters_set>
+        <parameters_value>
+         <name>Block properties</name>
+         <parameter_list>
+          <parameter_value name="Name" value="i_Router"/>
+         </parameter_list>
+        </parameters_value>
+       </parameters_set>
+       <sys_ports>
+        <sys_port io_id="55">
+         <description>
+          <io_reference>22</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>22</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+        <sys_port io_id="56">
+         <description>
+          <io_reference>23</io_reference>
+         </description>
+         <protocol>
+          <description>Default</description>
+          <parameters_set>
+           <parameters_value>
+            <name>Protocol sc_signal_inout properties</name>
+            <parameter_list>
+             <parameter_value name="Port type" read_only="true"/>
+            </parameter_list>
+           </parameters_value>
+          </parameters_set>
+         </protocol>
+         <parameters_set>
+          <parameters_value>
+           <name>Port Properties</name>
+           <parameter_list>
+            <parameter_value name="Name" read_only="true" visibility="NotRuntime"/>
+            <parameter_value name="Direction" read_only="true"/>
+            <parameter_value name="AddressingMode" read_only="true" hidden="true"/>
+            <parameter_value name="MasterSlaveness" read_only="true"/>
+            <parameter_value name="Category" read_only="true"/>
+           </parameter_list>
+          </parameters_value>
+         </parameters_set>
+         <gui>
+          <location_on_owner>45</location_on_owner>
+          <fixed>false</fixed>
+          <gui_base_port>
+           <orientation>-1</orientation>
+          </gui_base_port>
+         </gui>
+        </sys_port>
+       </sys_ports>
+       <selected_encap>
+        <io_reference>24</io_reference>
+       </selected_encap>
+       <selected_encap_constructor>
+        <io_reference>25</io_reference>
+       </selected_encap_constructor>
+       <encap_parameters_map>
+        <item>
+         <element>
+          <io_reference>24</io_reference>
+         </element>
+        </item>
+       </encap_parameters_map>
+       <encap_scml_properties_map>
+        <item>
+         <element>
+          <io_reference>24</io_reference>
+         </element>
+        </item>
+       </encap_scml_properties_map>
+       <encap_constructor_parameters_map>
+        <item>
+         <element>
+          <io_reference>25</io_reference>
+         </element>
+        </item>
+       </encap_constructor_parameters_map>
+       <dictionary/>
+       <gui>
+        <gui_base_block>
+         <orientation>2</orientation>
+         <shape>1</shape>
+         <angle>90</angle>
+         <bounds x="-30" y="525" width="100" height="100"/>
+        </gui_base_block>
+       </gui>
+      </sys_block>
+     </sys_blocks>
+     <dictionary/>
+     <gui>
+      <gui_base_block>
+       <orientation>2</orientation>
+       <shape>0</shape>
+       <angle>-1</angle>
+       <bounds x="0" y="0" width="0" height="0"/>
+      </gui_base_block>
+     </gui>
+     <create_own_target_locations_for_all_ports/>
+    </sys_hierarchical_block>
+   </hardware_system>
+  </system>
+  <remap_configurations/>
+  <remap_manager/>
+  <memory_map>
+   <links/>
+  </memory_map>
+  <bpj_project>
+   <csc_embedded_xml_version>2007.1</csc_embedded_xml_version>
+   <csc_embedded_xml>&lt;registry>
+&lt;table n=&quot;Debug&quot; b=&quot;cwr&quot;>
+  &lt;d n=&quot;__isa__&quot;             >config_t&lt;/d>
+  &lt;m n=&quot;pct_lib_config_Debug&quot;>pct_lib_config_Debug.0&lt;/m>
+  &lt;l n=&quot;pct_library_configs&quot; >pct_library_configs.0&lt;/l>
+&lt;/table>
+&lt;table n=&quot;Debug.Build&quot; b=&quot;Debug&quot;>
+  &lt;d n=&quot;encapsulated-netlist&quot; >true&lt;/d>
+  &lt;d n=&quot;export_type&quot;          >DYNAMIC NETLIST&lt;/d>
+  &lt;d n=&quot;library_configuration&quot;>Debug&lt;/d>
+  &lt;d n=&quot;main_configuration&quot;   >&lt;/d>
+&lt;/table>
+&lt;table n=&quot;Debug.Build.buildInfo.A&quot; b=&quot;Debug.Build&quot;>
+  &lt;d n=&quot;__isa__&quot;>build_info_t&lt;/d>
+&lt;/table>
+&lt;table n=&quot;Debug.Launch&quot; b=&quot;Debug&quot;/>
+&lt;table n=&quot;Debug.Run.runInfo&quot; b=&quot;Debug.Launch&quot;>
+  &lt;d n=&quot;__isa__&quot;>run_info_t&lt;/d>
+  &lt;d n=&quot;maf&quot;    >mem_map&lt;/d>
+&lt;/table>
+&lt;table n=&quot;cwr&quot;>
+  &lt;d n=&quot;CurrentConfig&quot;>Debug&lt;/d>
+&lt;/table>
+&lt;table n=&quot;pct_lib_config_Debug.0&quot;>
+  &lt;d n=&quot;AMBA_PL&quot;                   >BuildFromSource&lt;/d>
+  &lt;d n=&quot;AMBA_TLM2_BL&quot;              >BuildFromSource&lt;/d>
+  &lt;d n=&quot;AMBA_TLM2_LT_PL&quot;           >BuildFromSource&lt;/d>
+  &lt;d n=&quot;AXI_PL&quot;                    >BuildFromSource&lt;/d>
+  &lt;d n=&quot;CCSS_API_PL&quot;               >BuildFromSource&lt;/d>
+  &lt;d n=&quot;ExampleCache&quot;              >BuildFromSource&lt;/d>
+  &lt;d n=&quot;ExampleDMA&quot;                >BuildFromSource&lt;/d>
+  &lt;d n=&quot;ExampleInterruptController&quot;>BuildFromSource&lt;/d>
+  &lt;d n=&quot;ExampleMemory&quot;             >BuildFromSource&lt;/d>
+  &lt;d n=&quot;ExampleTimer&quot;              >BuildFromSource&lt;/d>
+  &lt;d n=&quot;FIFO_PL&quot;                   >BuildFromSource&lt;/d>
+  &lt;d n=&quot;FTModelingExamples&quot;        >BuildFromSource&lt;/d>
+  &lt;d n=&quot;GENERIC_PL&quot;                >BuildFromSource&lt;/d>
+  &lt;d n=&quot;GENERIC_TLM2&quot;              >BuildFromSource&lt;/d>
+  &lt;d n=&quot;MCO&quot;                       >BuildFromSource&lt;/d>
+  &lt;d n=&quot;MCOPower&quot;                  >BuildFromSource&lt;/d>
+  &lt;d n=&quot;MemoryCheck&quot;               >BuildFromSource&lt;/d>
+  &lt;d n=&quot;MultiSimCANLib&quot;            >BuildFromSource&lt;/d>
+  &lt;d n=&quot;MultiSimLib&quot;               >BuildFromSource&lt;/d>
+  &lt;d n=&quot;PAMTraining&quot;               >BuildFromSource&lt;/d>
+  &lt;d n=&quot;PDMTraining&quot;               >BuildFromSource&lt;/d>
+  &lt;d n=&quot;PV_BL&quot;                     >BuildFromSource&lt;/d>
+  &lt;d n=&quot;PowerModeling&quot;             >BuildFromSource&lt;/d>
+  &lt;d n=&quot;SCML_BL&quot;                   >BuildFromSource&lt;/d>
+  &lt;d n=&quot;SCML_TM_PL&quot;                >BuildFromSource&lt;/d>
+  &lt;d n=&quot;TLM2ModelingExamples&quot;      >BuildFromSource&lt;/d>
+  &lt;d n=&quot;TLM2_PL&quot;                   >BuildFromSource&lt;/d>
+  &lt;d n=&quot;TLM2_PROTOCOLS&quot;            >BuildFromSource&lt;/d>
+  &lt;d n=&quot;TclInitiator&quot;              >BuildFromSource&lt;/d>
+  &lt;d n=&quot;UPFTraining&quot;               >BuildFromSource&lt;/d>
+  &lt;d n=&quot;VSI_CONNECTOR_BLOCKS&quot;      >BuildFromSource&lt;/d>
+  &lt;d n=&quot;WDOG&quot;                      >BuildFromSource&lt;/d>
+&lt;/table>
+&lt;table n=&quot;pct_library_configs.0&quot;>
+  &lt;d n=&quot;aaaa&quot;>Debug&lt;/d>
+&lt;/table>
+&lt;/registry>
+</csc_embedded_xml>
+  </bpj_project>
+ </project>
+</pct_data>

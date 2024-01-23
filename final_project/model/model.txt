@@ -1,0 +1,9 @@
+LeNet
+Input 32 32 1
+Conv 5 5 6 relu
+MaxPool 2 2
+Conv 5 5 16 relu
+MaxPool 2 2
+FC 120 relu
+FC 84 relu
+FC 10 relu

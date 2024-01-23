@@ -1,20 +1,18 @@
-#include "Pattern.h"
 #include <time.h>
 
+#include "Pattern.h"
+
 void Pattern::run() {
+    if (rst.read() == 1)
+        return;
 
-	if ( rst.read() == 1 )
-		return;
+    A = rand() % 16;
+    B = rand() % 16;
+    C = rand() % 256;
 
-	A = rand() % 16;
-	B = rand() % 16;
-	C = rand() % 256; 
-	
-	temp_uint = temp_uint.to_uint() + 1;
+    temp_uint = temp_uint.to_uint() + 1;
 
-	cycle++;
-	if ( cycle == CYCLE )
-		sc_stop();
+    cycle++;
+    if (cycle == CYCLE)
+        sc_stop();
 }
-
-

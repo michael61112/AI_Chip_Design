@@ -10,20 +10,20 @@
 
 using namespace std;
 
-SC_MODULE( PE )
+SC_MODULE(PE)
 {
-	sc_in_clk clk;
-    sc_in <bool> rst_n;
+    sc_in_clk clk;
+    sc_in<bool> rst_n;
 
-    sc_port < sc_signal_in_if <LayerInfo> > i_layer_info;
-    sc_port < sc_signal_in_if <bool> > i_setup;
+    sc_port<sc_signal_in_if<LayerInfo>> i_layer_info;
+    sc_port<sc_signal_in_if<bool>> i_setup;
 
-    sc_port < sc_fifo_in_if  <Flit> > i_data;
-    sc_port < sc_fifo_out_if <Flit> > o_data;
+    sc_port<sc_fifo_in_if<Flit>> i_data;
+    sc_port<sc_fifo_out_if<Flit>> o_data;
 
     LayerInfo layer;
     bool is_valid;
-    
+
     // total computation cycle
     int cycle;
     int cut_cycle;
@@ -46,11 +46,11 @@ SC_MODULE( PE )
     void runMaxPool();
     void runFC();
 
-    SC_CTOR( PE )
+    SC_CTOR(PE)
     {
         is_valid = 0;
-		SC_THREAD( run );
-		sensitive << clk.pos() << rst_n.neg();
+        SC_THREAD(run);
+        sensitive << clk.pos() << rst_n.neg();
     }
 };
 

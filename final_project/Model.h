@@ -1,18 +1,18 @@
 #ifndef MODEL_H
 #define MODEL_H
 
-#include <iostream>
-#include <iomanip>
-#include <fstream>
-#include <vector>
 #include <cmath>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+#include <vector>
+
 #include "GlobalParam.h"
 
 using namespace std;
 
-class Model
-{
-public:
+class Model {
+   public:
     bool load(string file_name);
     bool readModelFile(string file_name);
     void printLayers();

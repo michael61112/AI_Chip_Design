@@ -5,7 +5,6 @@
 
 SC_MODULE(HelloWorld) {
     SC_CTOR(HelloWorld) {
-        // Nothing in constructor
         std::cout << "HelloWorld is constructed" << std::endl;
     }
 

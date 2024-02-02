@@ -13,8 +13,8 @@ SC_MODULE(Router)
     sc_in_clk clk;
     sc_in<bool> rst_n;
 
-    sc_port<sc_signal_in_if<PosInfo>> i_pos_info; // from CPU
-    sc_port<sc_signal_in_if<bool>> i_setup;       // from CPU
+    sc_port<sc_signal_in_if<PosInfo> > i_pos_info; // from CPU
+    sc_port<sc_signal_in_if<bool> > i_setup;       // from CPU
 
     sc_port<sc_fifo_in_if<Flit>, 5> i_data;
     sc_port<sc_fifo_out_if<Flit>, 5> o_data;

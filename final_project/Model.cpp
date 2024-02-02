@@ -17,7 +17,7 @@ bool Model::readModelFile(string file_name) {
 
     layers.clear();
     cout << "<Info> Read model file ... ";
-    f.open(file_name);
+    f.open(file_name.c_str());
     if (!f) {
         cout << "<Error> " << file_name << " does not exist." << endl;
         return false;

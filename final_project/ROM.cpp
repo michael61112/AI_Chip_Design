@@ -90,7 +90,7 @@ void ROM::readWeightFile(string file_name)
 	int param_num;
 	int cnt = 0;
 
-	f.open(file_name);
+	f.open(file_name.c_str());
 	while (f >> param_name)
 	{
 		f >> param_num;
@@ -114,7 +114,7 @@ void ROM::readInputFile(string file_name)
 {
 	ifstream f;
 
-	f.open(file_name);
+	f.open(file_name.c_str());
 	f >> img_size >> img_channel >> img_num;
 	if (img_size * img_channel > I_MEM_SIZE)
 	{

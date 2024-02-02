@@ -41,8 +41,8 @@ int sc_main(int argc, char** argv) {
     ROM m_ROM("m_ROM");
     Monitor m_monitor("m_monitor");
 
-    sc_vector<sc_vector<PE>> m_PE("m_PE");
-    sc_vector<sc_vector<Router>> m_router("m_router");
+    sc_vector<sc_vector<PE> > m_PE("m_PE");
+    sc_vector<sc_vector<Router> > m_router("m_router");
 
     if (m_ROM.load_data_fail)
         return 1;

@@ -13,12 +13,12 @@ SC_MODULE(ROM)
 {
     sc_in_clk clk;
     // from CPU
-    sc_port<sc_fifo_in_if<Size>> i_param_size_info;
-    sc_port<sc_signal_in_if<bool>> i_load_param_flg;
-    sc_port<sc_signal_in_if<bool>> i_load_input_flg;
-    sc_port<sc_signal_out_if<bool>> o_finish_flg;
+    sc_port<sc_fifo_in_if<Size> > i_param_size_info;
+    sc_port<sc_signal_in_if<bool> > i_load_param_flg;
+    sc_port<sc_signal_in_if<bool> > i_load_input_flg;
+    sc_port<sc_signal_out_if<bool> > o_finish_flg;
     // to PEs
-    sc_port<sc_fifo_out_if<Flit>> o_data;
+    sc_port<sc_fifo_out_if<Flit> > o_data;
 
     float rom_I[I_MEM_SIZE];
     float rom_W[W_MEM_SIZE];

@@ -1,7 +1,7 @@
 #ifndef CLOCKRESET_H
 #define CLOCKRESET_H
 
-#include "systemc.h"
+#include <systemc.h>
 
 SC_MODULE(Clock) {
     sc_out<bool> clk;

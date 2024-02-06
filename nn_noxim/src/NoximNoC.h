@@ -11,7 +11,7 @@
 #ifndef __NOXIMNOC_H__
 #define __NOXIMNOC_H__
 
-#include <systemc.h>
+#include "systemc.h"
 #include "NoximTile.h"
 #include "NoximGlobalRoutingTable.h"
 #include "NoximGlobalTrafficTable.h"

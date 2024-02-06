@@ -7,16 +7,16 @@
 #
 #SYSTEMC = /usr/systemc
 #SYSTEMC = /SYSTEMC/systemc
-SYSTEMC = /usr/systemc/
+SYSTEMC = /usr/local/systemc-2.3.4
 #
 # That's all for you!!!
 
 INCDIR = -I. -I.. -I../src -I$(SYSTEMC)/include
-LIBDIR = -L. -L.. -L../src -L$(SYSTEMC)/lib-$(TARGET_ARCH) 
+LIBDIR = -L. -L.. -L../src -L$(SYSTEMC)/lib-linux64
 #-Wl,-rpath,$(SYSTEMC)/lib-$(TARGET_ARCH)
-
+RPATH=-Wl,-rpath,/usr/local/systemc-2.3.4/lib-linux64
 #EXTRA_LIBS = -lpthread
-LIBS = -lsystemc -lm $(EXTRA_LIBS)
+LIBS = -lsystemc-2.3.4
 
 
 
@@ -24,7 +24,7 @@ EXE    = $(MODULE)
 
 .SUFFIXES: .cpp .c .o 
 
-$(EXE): $(OBJS) $(OBJS_C) $(SYSTEMC)/lib-$(TARGET_ARCH)/libsystemc.a 
+$(EXE): $(OBJS) $(OBJS_C) $(SYSTEMC)/lib-linux64/libsystemc.a 
 	$(CC) $(CFLAGS) $(INCDIR) $(LIBDIR) -o $@ $(OBJS_A) $(LIBS) 2>&1 | c++filt
 
 .cpp.o:

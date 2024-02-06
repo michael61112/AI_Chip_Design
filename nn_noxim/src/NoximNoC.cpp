@@ -393,7 +393,7 @@ NoximTile *NoximNoC::searchNode(const int id) const
 			for ( k=0; k<NoximGlobalParams::mesh_dim_z; k++)
 				if (t[i][j][k]->r->local_id == id)
 					return t[i][j][k];
-	return false;
+	return 0;
 }
 
 void NoximNoC::entry()  //Foster big modified - 09/11/12

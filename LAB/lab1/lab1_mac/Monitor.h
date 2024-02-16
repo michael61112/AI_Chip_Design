@@ -1,4 +1,4 @@
-#include "systemc.h"
+#include <systemc.h>
 #include <iostream>
 
 using namespace std;
@@ -19,7 +19,7 @@ SC_MODULE( Monitor ) {
 		cycle = 0;
 	
 		SC_METHOD( run );
-		sensitive << clock.pos();
+		sensitive << clock.neg();
 	}
 };
 
